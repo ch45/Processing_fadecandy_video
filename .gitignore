@@ -1,0 +1,8 @@
+*.orig
+* - Copy.pde
+*.zip
+discards*
+_*
+~$*
+*.autosave
+data/*
