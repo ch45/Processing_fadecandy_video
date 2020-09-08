@@ -2,12 +2,13 @@ import processing.video.*;
 Movie movie;
 OPC opc;
 
-String filename = "skate01.mp4";
+String filename = "flag_400_300.mp4";
+// String filename = "skate01.mp4";
 // String filename = "launch1.mp4";
 
 // We can use this to mess with the aspect ratio of the video as the grid is currently 1:1
-int verticalBorder = 12;  // Bars at the sides of the display
-int horizontalBorder = 10;  // Bars at the top and bottom of display
+int verticalBorder = 100;  // Bars at the sides of the display
+int horizontalBorder = 0;  // Bars at the top and bottom of display
 
 final int boxesAcross = 2;
 final int boxesDown = 2;
