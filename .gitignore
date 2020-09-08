@@ -6,4 +6,5 @@ _*
 ~$*
 *.autosave
 data/*
+!data/flag_400_300.mp4
 *~
