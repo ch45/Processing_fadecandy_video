@@ -1,6 +1,9 @@
 import processing.video.*;
 Movie movie;
+
 OPC opc;
+final String fcServerHost = "127.0.0.1";
+final int fcServerPort = 7890;
 
 String filename = "flag_400_300.mp4";
 // String filename = "launch1.mp4";
@@ -29,7 +32,7 @@ void setup()
   movie = new Movie(this, filename);
   movie.loop();
 
-  opc = new OPC(this, "127.0.0.1", 7890);  // Connect to the local instance of fcserver
+  opc = new OPC(this, fcServerHost, fcServerPort); // Connect to an instance of fcserver
 
   spacing = (float)min(height / (boxesDown * ledsDown + 1), width / (boxesAcross * ledsAcross + 1));
   x0 = (int)(width - spacing * (boxesAcross * ledsAcross - 1)) / 2;
